@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Patrones de diseño\Interfaces.csproj", "{660509D0-ED12-4C45-8A2C-F01A82807F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{660509D0-ED12-4C45-8A2C-F01A82807F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy e Iterator", "Strategy e Iterator\Strategy e Iterator.csproj", "{0B7E43CD-1A40-4367-A73B-B981764BD756}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{660509D0-ED12-4C45-8A2C-F01A82807F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660509D0-ED12-4C45-8A2C-F01A82807F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660509D0-ED12-4C45-8A2C-F01A82807F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B7E43CD-1A40-4367-A73B-B981764BD756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7E43CD-1A40-4367-A73B-B981764BD756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7E43CD-1A40-4367-A73B-B981764BD756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7E43CD-1A40-4367-A73B-B981764BD756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
