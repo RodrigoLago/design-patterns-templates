@@ -30,8 +30,6 @@ Llenar(pila);
 Informar(pila);*/
 
 
-
-
 static void LlenarPersonas (IColeccionable coleccion)
 {
     for(int i = 0; i < 20; i++)
@@ -42,6 +40,7 @@ static void LlenarPersonas (IColeccionable coleccion)
         coleccion.Agregar(persona);
     }
 }
+
 static void InformarPersonas(IColeccionable coleccion)
 {
     Console.WriteLine("Cantidad elementos: " + coleccion.Cuantos());
