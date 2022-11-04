@@ -1,8 +1,8 @@
-﻿namespace Strategy_e_Iterator
+﻿namespace FactoryObserver
 {
     class PilaIterator : IIterator
     {
-        private List<IComparable> pila = new();
+        private List<IComparable> pila = new List<IComparable>();
         int posicion = 0;
         public PilaIterator(List<IComparable> pila)
         {
