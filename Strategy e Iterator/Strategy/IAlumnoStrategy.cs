@@ -1,5 +1,4 @@
-﻿using IComparable = Strategy_e_Iterator.Interfaces.IComparable;
-namespace Strategy_e_Iterator.Strategy
+﻿namespace Strategy_e_Iterator
 {
     public interface IAlumnoStrategy
     {

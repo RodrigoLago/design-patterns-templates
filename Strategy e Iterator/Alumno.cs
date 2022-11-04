@@ -1,8 +1,4 @@
-﻿using Strategy_e_Iterator.Interfaces;
-using Strategy_e_Iterator.Strategy;
-using IComparable = Strategy_e_Iterator.Interfaces.IComparable;
-
-namespace Strategy_e_Iterator
+﻿namespace Strategy_e_Iterator
 {
     public class Alumno : Persona, IComparable
     {

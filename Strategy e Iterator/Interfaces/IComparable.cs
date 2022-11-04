@@ -1,4 +1,4 @@
-﻿namespace Strategy_e_Iterator.Interfaces
+﻿namespace Strategy_e_Iterator
 {
     public interface IComparable
     {

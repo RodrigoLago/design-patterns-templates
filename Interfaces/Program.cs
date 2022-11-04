@@ -35,7 +35,7 @@ static void LlenarPersonas (IColeccionable coleccion)
     for(int i = 0; i < 20; i++)
     {
         string name = GenerateName(new Random().Next(5,15));
-        Numero dni = new Numero(new Random().Next(10000000, 50000000));
+        Numero dni = new (new Random().Next(10000000, 50000000));
         IComparable persona = new Persona(name,dni);
         coleccion.Agregar(persona);
     }
@@ -59,9 +59,9 @@ static void LlenarAlumnos(IColeccionable coleccion)
     for (int i = 0; i < 20; i++)
     {
         string name = GenerateName(new Random().Next(5, 15));
-        Numero dni = new Numero(new Random().Next(10000000, 50000000));
-        Numero legajo = new Numero(new Random().Next(1000, 4000));
-        Numero promedio = new Numero(new Random().Next(1, 11));
+        Numero dni = new (new Random().Next(10000000, 50000000));
+        Numero legajo = new (new Random().Next(1000, 4000));
+        Numero promedio = new (new Random().Next(1, 11));
         IComparable alumno = new Alumno(name,dni,legajo,promedio);
         coleccion.Agregar(alumno);
     }
@@ -73,7 +73,7 @@ InformarPersonas(pilaAlumnos);*/
 
 static string GenerateName(int len)
 {
-    Random r = new Random();
+    Random r = new ();
     string[] consonants = { "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "l", "n", "p", "q", "r", "s", "sh", "zh", "t", "v", "w", "x" };
     string[] vowels = { "a", "e", "i", "o", "u", "ae", "y" };
     string Name = "";
