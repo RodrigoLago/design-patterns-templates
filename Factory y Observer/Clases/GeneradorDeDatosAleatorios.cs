@@ -10,12 +10,12 @@
         }
         public string StringAleatorio(int cant)
         {
-            Random cadena = new ();
+            Random cadena = new();
             string cadenaLlena = null;
             for (int i = 0; i < cant; i++)
             {
                 char randomChar = (char)cadena.Next('a', 'z');
-                
+
                 cadenaLlena += randomChar;
             }
             return cadenaLlena;

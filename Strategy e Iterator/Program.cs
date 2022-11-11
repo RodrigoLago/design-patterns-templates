@@ -5,10 +5,10 @@ static void LlenarAlumnos(IColeccionable coleccion)
     for (int i = 0; i < 20; i++)
     {
         string name = GenerateName(new Random().Next(5, 15));
-        Numero dni = new (new Random().Next(10000000, 50000000));
-        Numero legajo = new (new Random().Next(1000, 4000));
-        Numero promedio = new (new Random().Next(1, 11));
-        Strategy_e_Iterator.IComparable alumno = new Alumno(name,dni,legajo,promedio);
+        Numero dni = new(new Random().Next(10000000, 50000000));
+        Numero legajo = new(new Random().Next(1000, 4000));
+        Numero promedio = new(new Random().Next(1, 11));
+        Strategy_e_Iterator.IComparable alumno = new Alumno(name, dni, legajo, promedio);
         coleccion.Agregar(alumno);
     }
 }
@@ -39,10 +39,10 @@ static string GenerateName(int len)
     return Name;
 }
 
-Pila pila = new ();
-Cola cola = new ();
-Conjunto conjunto = new ();
-Diccionario diccionario = new ();
+Pila pila = new();
+Cola cola = new();
+Conjunto conjunto = new();
+Diccionario diccionario = new();
 LlenarAlumnos(pila);
 LlenarAlumnos(cola);
 LlenarAlumnos(conjunto);

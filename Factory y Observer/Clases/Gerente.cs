@@ -1,6 +1,6 @@
 ﻿namespace FactoryObserver
 {
-    public class Gerente :IObservador
+    public class Gerente : IObservador
     {
         public string nombre;
         List<IObservable> mejores = new();
@@ -12,12 +12,12 @@
         {
             foreach (Vendedor vendedor in mejores)
             {
-                Console.WriteLine("El vendedor "+vendedor.GetNombre()+" tuvo de bonus: "+vendedor.GetBonus());
+                Console.WriteLine("El vendedor " + vendedor.GetNombre() + " tuvo de bonus: " + vendedor.GetBonus());
             }
         }
         public void Venta(double monto, IObservable vendedor)
         {
-            if (monto>5000)
+            if (monto > 5000)
             {
                 if (!mejores.Contains(vendedor))
                 {
@@ -31,6 +31,6 @@
             double monto = ((Vendedor)observado).GetBonus();
             this.Venta(monto, (Vendedor)observado);
         }
-        
+
     }
 }

@@ -10,7 +10,7 @@ static void Llenar(IColeccionable coleccion)
 }
 static void Informar(IColeccionable coleccion)
 {
-    Console.WriteLine("Cuantos: "+ coleccion.Cuantos());
+    Console.WriteLine("Cuantos: " + coleccion.Cuantos());
     Console.WriteLine("Minimo: " + coleccion.Minimo());
     Console.WriteLine("Maximo: " + coleccion.Maximo());
     Console.Write("Ingrese un numero y le digo si esta en la lista: ");
@@ -30,13 +30,13 @@ Llenar(pila);
 Informar(pila);*/
 
 
-static void LlenarPersonas (IColeccionable coleccion)
+static void LlenarPersonas(IColeccionable coleccion)
 {
-    for(int i = 0; i < 20; i++)
+    for (int i = 0; i < 20; i++)
     {
-        string name = GenerateName(new Random().Next(5,15));
-        Numero dni = new (new Random().Next(10000000, 50000000));
-        IComparable persona = new Persona(name,dni);
+        string name = GenerateName(new Random().Next(5, 15));
+        Numero dni = new(new Random().Next(10000000, 50000000));
+        IComparable persona = new Persona(name, dni);
         coleccion.Agregar(persona);
     }
 }
@@ -59,10 +59,10 @@ static void LlenarAlumnos(IColeccionable coleccion)
     for (int i = 0; i < 20; i++)
     {
         string name = GenerateName(new Random().Next(5, 15));
-        Numero dni = new (new Random().Next(10000000, 50000000));
-        Numero legajo = new (new Random().Next(1000, 4000));
-        Numero promedio = new (new Random().Next(1, 11));
-        IComparable alumno = new Alumno(name,dni,legajo,promedio);
+        Numero dni = new(new Random().Next(10000000, 50000000));
+        Numero legajo = new(new Random().Next(1000, 4000));
+        Numero promedio = new(new Random().Next(1, 11));
+        IComparable alumno = new Alumno(name, dni, legajo, promedio);
         coleccion.Agregar(alumno);
     }
 }
@@ -73,7 +73,7 @@ InformarPersonas(pilaAlumnos);*/
 
 static string GenerateName(int len)
 {
-    Random r = new ();
+    Random r = new();
     string[] consonants = { "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "l", "n", "p", "q", "r", "s", "sh", "zh", "t", "v", "w", "x" };
     string[] vowels = { "a", "e", "i", "o", "u", "ae", "y" };
     string Name = "";

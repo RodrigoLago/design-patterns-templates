@@ -39,7 +39,7 @@
         }
         public override string ToString()
         {
-            return "Clave: "+this.GetClave().ToString() +" Valor: "+ this.GetValor().ToString();
+            return "Clave: " + this.GetClave().ToString() + " Valor: " + this.GetValor().ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace FactoryObserver
 {
-    public class Conjunto : IColeccionable,IIterable
+    public class Conjunto : IColeccionable, IIterable
     {
         private List<IComparable> lista = new List<IComparable>();
         public List<IComparable> GetLista()
@@ -9,14 +9,15 @@
         }
         public void Agregar(IComparable elem)
         {
-            if (!this.Contiene(elem)){
+            if (!this.Contiene(elem))
+            {
                 lista.Add(elem);
             }
         }
 
         public bool Pertecene(IComparable elem)
         {
-            if (this.GetLista().Count>0)
+            if (this.GetLista().Count > 0)
             {
                 for (int i = 0; i < lista.Count; i++)
                 {

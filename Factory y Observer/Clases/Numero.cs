@@ -18,7 +18,7 @@
         //Interfaz Comparable
         public bool SosIgual(IComparable elem)
         {
-            if (this.GetValor()==((Numero)elem).GetValor())
+            if (this.GetValor() == ((Numero)elem).GetValor())
                 return true;
             else
                 return false;

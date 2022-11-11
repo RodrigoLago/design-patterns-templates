@@ -1,6 +1,6 @@
 ﻿namespace FactoryObserver
 {
-    public class Diccionario : IColeccionable,IIterable
+    public class Diccionario : IColeccionable, IIterable
     {
         private Conjunto conjunto;
         private Numero clave = new(0);
@@ -12,11 +12,11 @@
         {
             return this.conjunto;
         }
-        
+
         public void Agregar(IComparable valor)
         {
             bool seModifico = false;
-            ClaveValor claveValor = new(clave,valor);
+            ClaveValor claveValor = new(clave, valor);
             foreach (ClaveValor item in conjunto.GetLista())
             {
                 if (item.GetClave().SosIgual(clave))
@@ -30,7 +30,7 @@
             {
                 conjunto.Agregar(claveValor);
             }
-            clave=new Numero(clave.GetValor()+1);
+            clave = new Numero(clave.GetValor() + 1);
         }
         public object ValorDe(IComparable clave)
         {

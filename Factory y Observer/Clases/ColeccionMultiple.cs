@@ -1,6 +1,6 @@
 ﻿namespace FactoryObserver
 {
-    public class ColeccionMultiple:IColeccionable
+    public class ColeccionMultiple : IColeccionable
     {
         Cola cola = new();
         Pila pila = new();
@@ -18,7 +18,7 @@
 
         public bool Contiene(IComparable elem)
         {
-            if (cola.Contiene(elem)||pila.Contiene(elem))
+            if (cola.Contiene(elem) || pila.Contiene(elem))
                 return true;
             else
                 return false;

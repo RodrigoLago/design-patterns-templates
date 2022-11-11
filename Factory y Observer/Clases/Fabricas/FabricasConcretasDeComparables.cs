@@ -75,7 +75,7 @@
             Console.Write("Bonus: ");
             int bonus = lector.NumeroLeido().GetValor();
 
-            return new Vendedor(nombre, dni,sueldoBasico,bonus);
+            return new Vendedor(nombre, dni, sueldoBasico, bonus);
         }
     }
 }

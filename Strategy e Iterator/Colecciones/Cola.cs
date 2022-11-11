@@ -1,30 +1,30 @@
 ﻿namespace Strategy_e_Iterator
 {
-    public class Cola : IColeccionable,IIterable
+    public class Cola : IColeccionable, IIterable
     {
-		private List<IComparable> cola = new();
+        private List<IComparable> cola = new();
 
-		public void Encolar(IComparable elem)
-		{
-			this.cola.Add(elem);
-		}
+        public void Encolar(IComparable elem)
+        {
+            this.cola.Add(elem);
+        }
 
-		public IComparable Desencolar()
-		{
-			IComparable temp = this.cola[0];
-			this.cola.RemoveAt(0);
-			return temp;
-		}
+        public IComparable Desencolar()
+        {
+            IComparable temp = this.cola[0];
+            this.cola.RemoveAt(0);
+            return temp;
+        }
 
-		public IComparable Tope()
-		{
-			return this.cola[0];
-		}
+        public IComparable Tope()
+        {
+            return this.cola[0];
+        }
 
-		public bool EsVacia()
-		{
-			return this.cola.Count == 0;
-		}
+        public bool EsVacia()
+        {
+            return this.cola.Count == 0;
+        }
 
         public int Cuantos()
         {

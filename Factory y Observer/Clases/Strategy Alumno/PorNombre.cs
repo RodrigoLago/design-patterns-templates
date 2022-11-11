@@ -14,7 +14,7 @@
 
         public bool SosMenor(IComparable a1, IComparable a2)
         {
-            return (((Alumno)a1).GetNombre()).CompareTo(((Alumno)a2).GetNombre()) ==-1;
+            return (((Alumno)a1).GetNombre()).CompareTo(((Alumno)a2).GetNombre()) == -1;
         }
     }
 }

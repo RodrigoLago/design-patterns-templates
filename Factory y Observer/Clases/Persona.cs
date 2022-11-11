@@ -25,16 +25,16 @@
 
         public bool SosMayor(IComparable elem)
         {
-            return this.GetDni().SosMayor( ((Persona)elem).GetDni());
+            return this.GetDni().SosMayor(((Persona)elem).GetDni());
         }
 
         public bool SosMenor(IComparable elem)
         {
-            return this.GetDni().SosMenor( ((Persona)elem).GetDni());
+            return this.GetDni().SosMenor(((Persona)elem).GetDni());
         }
         public override string ToString()
         {
-            return "Persona "+GetNombre()+"Dni "+ GetDni().ToString();
+            return "Persona " + GetNombre() + "Dni " + GetDni().ToString();
         }
     }
 }

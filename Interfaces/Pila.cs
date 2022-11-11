@@ -2,7 +2,7 @@
 {
     public class Pila : IColeccionable
     {
-       private List<IComparable> _items = new List<IComparable>();
+        private List<IComparable> _items = new List<IComparable>();
 
         public void Agregar(IComparable comparable)
         {

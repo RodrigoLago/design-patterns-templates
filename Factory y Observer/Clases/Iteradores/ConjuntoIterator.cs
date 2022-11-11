@@ -3,7 +3,7 @@
     class ConjuntoIterator : IIterator
     {
         private List<IComparable> lista = new List<IComparable>();
-        int posicion=0;
+        int posicion = 0;
         public ConjuntoIterator(List<IComparable> lista)
         {
             this.lista = lista;

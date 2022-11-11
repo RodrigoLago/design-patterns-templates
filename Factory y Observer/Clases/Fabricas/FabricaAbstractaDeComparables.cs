@@ -1,6 +1,6 @@
 ﻿namespace FactoryObserver
 {
-    public abstract class FabricaDeComparables 
+    public abstract class FabricaDeComparables
     {
         public abstract IComparable CrearAleatorio();
         public abstract IComparable CrearPorTeclado();
@@ -43,6 +43,6 @@
             }
             return fabrica.CrearPorTeclado();
         }
-        
+
     }
 }

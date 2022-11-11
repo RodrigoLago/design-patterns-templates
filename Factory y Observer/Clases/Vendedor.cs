@@ -1,12 +1,12 @@
 ﻿namespace FactoryObserver
 {
-    public class Vendedor:Persona,IComparable,IObservable
+    public class Vendedor : Persona, IComparable, IObservable
     {
         private Numero sueldoBasico;
         private double bonus;
         IEstrategiaVendedor estrategia;
         List<IObservador> observadores = new List<IObservador>();
-        public Vendedor(string nombre,int dni,int sueldoBasico,double bonus):base(nombre, dni)
+        public Vendedor(string nombre, int dni, int sueldoBasico, double bonus) : base(nombre, dni)
         {
             this.sueldoBasico = new Numero(sueldoBasico);
             this.bonus = bonus;
@@ -22,7 +22,7 @@
         }
         public void Venta(int monto)
         {
-            Console.WriteLine("***El vendedor "+this.GetNombre()+" hizo una venta por "+monto+" pesos***");
+            Console.WriteLine("***El vendedor " + this.GetNombre() + " hizo una venta por " + monto + " pesos***");
         }
         public void AumentaBonus()
         {
@@ -30,7 +30,7 @@
         }
         public override string ToString()
         {
-            return "Vendedor Nombre: " + this.GetNombre() + " Dni:" + this.GetDni() + " Sueldo: " + this.GetSueldo()+" Bonus: "+this.GetBonus();
+            return "Vendedor Nombre: " + this.GetNombre() + " Dni:" + this.GetDni() + " Sueldo: " + this.GetSueldo() + " Bonus: " + this.GetBonus();
         }
         public new bool SosIgual(IComparable elem)
         {

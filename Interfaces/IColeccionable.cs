@@ -6,7 +6,7 @@
         public IComparable Minimo();
         public IComparable Maximo();
         public void Agregar(IComparable comparable);
-        public bool Contiene (IComparable comparable);
-    
+        public bool Contiene(IComparable comparable);
+
     }
 }

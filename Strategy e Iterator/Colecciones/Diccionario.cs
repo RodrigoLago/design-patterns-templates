@@ -1,6 +1,6 @@
 ﻿namespace Strategy_e_Iterator
 {
-    public  class Diccionario : IColeccionable, IIterable
+    public class Diccionario : IColeccionable, IIterable
     {
         private Conjunto conjunto;
         private Numero clave = new Numero(0);

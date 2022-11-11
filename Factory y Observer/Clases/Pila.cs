@@ -2,29 +2,29 @@
 {
     public class Pila : IColeccionable, IIterable
     {
-		private List<IComparable> pila = new List<IComparable>();
+        private List<IComparable> pila = new List<IComparable>();
 
-		public void Apilar(IComparable elem)
-		{
-			this.pila.Add(elem);
-		}
+        public void Apilar(IComparable elem)
+        {
+            this.pila.Add(elem);
+        }
 
-		public IComparable Desapilar()
-		{
-			IComparable temp = this.pila[this.pila.Count - 1];
-			this.pila.RemoveAt(this.pila.Count - 1);
-			return temp;
-		}
+        public IComparable Desapilar()
+        {
+            IComparable temp = this.pila[this.pila.Count - 1];
+            this.pila.RemoveAt(this.pila.Count - 1);
+            return temp;
+        }
 
-		public IComparable Tope()
-		{
-			return this.pila[this.pila.Count - 1];
-		}
+        public IComparable Tope()
+        {
+            return this.pila[this.pila.Count - 1];
+        }
 
-		public bool EsVacia()
-		{
-			return this.pila.Count == 0;
-		}
+        public bool EsVacia()
+        {
+            return this.pila.Count == 0;
+        }
 
         public int Cuantos()
         {
@@ -34,7 +34,7 @@
         public IComparable Minimo()
         {
             IComparable aux = pila[0];
-            for (int i = 1; i < pila.Count;i++)
+            for (int i = 1; i < pila.Count; i++)
             {
                 if (pila[i].SosMenor(aux))
                 {
