@@ -1,4 +1,4 @@
-﻿using Strategy_e_Iterator;
+﻿using StrategyIterator;
 
 static void LlenarAlumnos(IColeccionable coleccion)
 {
@@ -8,7 +8,7 @@ static void LlenarAlumnos(IColeccionable coleccion)
         Numero dni = new(new Random().Next(10000000, 50000000));
         Numero legajo = new(new Random().Next(1000, 4000));
         Numero promedio = new(new Random().Next(1, 11));
-        Strategy_e_Iterator.IComparable alumno = new Alumno(name, dni, legajo, promedio);
+        StrategyIterator.IComparable alumno = new Alumno(name, dni, legajo, promedio);
         coleccion.Agregar(alumno);
     }
 }

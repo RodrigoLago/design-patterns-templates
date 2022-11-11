@@ -1,5 +1,5 @@
-﻿using interfaces;
-using IComparable = interfaces.IComparable;
+﻿using Interfaces;
+using IComparable = Interfaces.IComparable;
 
 static void Llenar(IColeccionable coleccion)
 {

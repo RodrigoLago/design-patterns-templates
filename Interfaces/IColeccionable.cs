@@ -1,4 +1,4 @@
-﻿namespace interfaces
+﻿namespace Interfaces
 {
     public interface IColeccionable
     {

@@ -1,4 +1,4 @@
-﻿namespace Strategy_e_Iterator
+﻿namespace StrategyIterator
 {
     public class Persona : IComparable
     {

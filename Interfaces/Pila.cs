@@ -1,4 +1,4 @@
-﻿namespace interfaces
+﻿namespace Interfaces
 {
     public class Pila : IColeccionable
     {
